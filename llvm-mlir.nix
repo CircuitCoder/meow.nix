@@ -1,7 +1,7 @@
 { pkgs ? import ./pinned-nixpkgs.nix {}}:
 pkgs.stdenv.mkDerivation rec {
   pname = "llvm-mlir";
-  version = "53c251bd05704a3f76f660c3b715bf3f35e7d594-1";
+  version = "53c251bd05704a3f76f660c3b715bf3f35e7d594";
   src = pkgs.fetchFromGitHub {
     owner = "llvm";
     repo = "llvm-project";

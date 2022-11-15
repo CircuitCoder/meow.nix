@@ -4,7 +4,7 @@ let
 in
   pkgs.stdenv.mkDerivation rec {
     pname = "circt";
-    version = "sifive/1/22/1-1";
+    version = "sifive/1/22/1";
     src = pkgs.fetchFromGitHub {
       owner = "llvm";
       repo = "${pname}";
