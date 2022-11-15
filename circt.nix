@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {}}:
+{ pkgs ? import ./pinned-nixpkgs.nix {}}:
 let
   llvm = import ./llvm-mlir.nix { pkgs = pkgs; };
 in
