@@ -18,14 +18,12 @@ pkgs.stdenv.mkDerivation rec {
   ];
 
   cmakeFlags = [
-    "-DLLVM_ENABLE_PROJECTS=mlir;lld;clang"
+    "-DLLVM_ENABLE_PROJECTS=mlir"
     "-DLLVM_TARGETS_TO_BUILD=host"
     "-DLLVM_ENABLE_ASSERTIONS=ON"
     "-DLLVM_INSTALL_UTILS=ON"
     "-DLLVM_BUILD_LLVM_DYLIB=ON"
     "-DLLVM_LINK_LLVM_DYLIB=ON"
-    "-DLLVM_TARGETS_TO_BUILD=X86;RISCV"
-    "-DLLVM_BUILD_TESTS=False"
     "-DCMAKE_BUILD_TYPE=Release"
   ];
 }
