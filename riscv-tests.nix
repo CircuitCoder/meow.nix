@@ -11,5 +11,5 @@ pkgs.pkgsCross.riscv64-embedded.stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  buildPhase = "make XLEN=32 RISCV_PREFIX=riscv64-none-elf-";
+  buildPhase = "make RISCV_PREFIX=riscv64-none-elf-";
 }
