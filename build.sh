@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOPS="circt"
+TOPS="circt riscv-tests spike"
 
 build() {
   echo "Building $1..."
